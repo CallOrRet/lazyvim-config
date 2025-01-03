@@ -1,26 +1,8 @@
 return {
   {
-    "lukas-reineke/indent-blankline.nvim",
+    "snacks.nvim",
     opts = {
-      indent = { char = "┊" },
-    },
-  },
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    opts = {
-      default_component_configs = {
-        git_status = {
-          symbols = {
-            added = "",
-            staged = "󰱒",
-            ignored = "◌",
-            deleted = "",
-            renamed = "",
-            unstaged = "",
-            untracked = "",
-          },
-        },
-      },
+      indent = { enabled = true, char = "┊" },
     },
   },
   {
