@@ -6,7 +6,7 @@ return {
         git_status = {
           symbols = {
             added = "",
-            staged = "󰱒",
+            staged = "",
             ignored = "◌",
             deleted = "",
             renamed = "",
