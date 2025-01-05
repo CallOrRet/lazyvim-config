@@ -2,7 +2,10 @@ return {
   {
     "snacks.nvim",
     opts = {
-      indent = { enabled = true, char = "┊" },
+      indent = {
+        enabled = true,
+        char = "┊",
+      },
     },
   },
   {
