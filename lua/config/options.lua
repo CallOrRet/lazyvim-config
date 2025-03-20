@@ -5,3 +5,4 @@ vim.g.snacks_animate = false
 local opt = vim.opt
 opt.mouse = ""
 opt.shell = "bash"
+opt.swapfile = false
