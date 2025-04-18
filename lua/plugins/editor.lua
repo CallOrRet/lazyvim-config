@@ -1,26 +1,22 @@
 return {
   {
-    "nvim-neo-tree/neo-tree.nvim",
+    "folke/snacks.nvim",
     opts = {
-      event_handlers = {
-        {
-          event = "neo_tree_buffer_enter",
-          handler = function()
-            vim.cmd([[
-              setlocal relativenumber
-            ]])
-          end,
-        },
+      indent = {
+        enabled = true,
+        char = "┊",
       },
-      default_component_configs = {
-        git_status = {
-          symbols = {
-            added = "",
+      picker = {
+        icons = {
+          git = {
+            commit = "󰜘 ",
             staged = "",
-            ignored = "◌",
+            added = "",
             deleted = "",
+            ignored = "◌",
+            modified = "",
             renamed = "",
-            unstaged = "",
+            unmerged = "",
             untracked = "",
           },
         },
@@ -28,7 +24,15 @@ return {
     },
   },
   {
-    "OXY2DEV/markview.nvim",
-    ft = "markdown",
+    "akinsho/bufferline.nvim",
+    opts = {
+      options = {
+        show_buffer_close_icons = false,
+      },
+    },
   },
+  -- {
+  --   "OXY2DEV/markview.nvim",
+  --   ft = "markdown",
+  -- },
 }
