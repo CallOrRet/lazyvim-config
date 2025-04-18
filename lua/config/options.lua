@@ -8,6 +8,6 @@ opt.shell = "fish"
 opt.swapfile = false
 
 local env = vim.fn.environ()
-vim.env.PATH = "/root/lang/go/bin:/root/lang/node/bin:/root/lang/rust/bin" .. env.PATH
+vim.env.PATH = "/root/lang/go/bin:/root/lang/node/bin:/root/lang/rust/bin:" .. env.PATH
 
 vim.g.snacks_animate = false
