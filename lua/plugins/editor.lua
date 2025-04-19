@@ -4,7 +4,6 @@ return {
     opts = {
       indent = {
         enabled = true,
-        char = "┊",
       },
       picker = {
         icons = {
