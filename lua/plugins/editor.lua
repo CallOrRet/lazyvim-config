@@ -20,6 +20,11 @@ return {
           },
         },
       },
+      styles = {
+        float = {
+          wo = { wrap = true },
+        },
+      },
     },
   },
   {
