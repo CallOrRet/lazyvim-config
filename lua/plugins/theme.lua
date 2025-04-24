@@ -1,6 +1,5 @@
 return {
   {
-
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
     lazy = false, -- load this default theme
