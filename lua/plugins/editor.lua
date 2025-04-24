@@ -31,6 +31,7 @@ return {
     "akinsho/bufferline.nvim",
     opts = {
       options = {
+        close_icon = "",
         show_buffer_close_icons = false,
       },
     },
