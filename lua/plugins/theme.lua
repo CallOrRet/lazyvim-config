@@ -2,7 +2,7 @@ return {
   {
     "bluz71/vim-moonfly-colors",
     name = "moonfly",
-    lazy = false, -- load this default theme
+    lazy = true,
     priority = 1000,
     config = function()
       vim.g.moonflyWinSeparator = 2
