@@ -9,6 +9,7 @@ opt.shell = "fish"
 opt.swapfile = false
 
 vim.g.snacks_animate = false
+vim.g.moonflyWinSeparator = 2
 
 local lang_dir = "/root/lang"
 local lang_dirs = vim.split(vim.fn.glob(lang_dir .. "/*"), "\n", { trimempty = true })
