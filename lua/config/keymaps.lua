@@ -4,3 +4,5 @@
 local keymap = vim.keymap.set
 keymap({ "t" }, "jk", "<C-\\><C-n>")
 keymap({ "i", "v", "c" }, "jk", "<esc>")
+keymap({ "c" }, "<C-h>", "<left>")
+keymap({ "c" }, "<C-l>", "<right>")
