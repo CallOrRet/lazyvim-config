@@ -5,7 +5,7 @@
 local opt = vim.opt
 
 opt.mouse = ""
-opt.shell = "fish"
+opt.shell = "fish -i"
 opt.swapfile = false
 
 vim.g.snacks_animate = false
