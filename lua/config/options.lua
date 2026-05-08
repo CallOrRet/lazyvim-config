@@ -8,6 +8,7 @@ opt.mouse = ""
 opt.shell = "fish -l"
 opt.swapfile = false
 
+vim.g.clipboard = "osc52"
 vim.g.snacks_animate = false
 vim.g.moonflyWinSeparator = 2
 
