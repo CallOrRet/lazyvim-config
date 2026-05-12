@@ -8,15 +8,21 @@ opt.mouse = ""
 opt.shell = "fish -l"
 opt.swapfile = false
 
+local osc52 = require("vim.ui.clipboard.osc52")
+
 vim.g.clipboard = {
   name = "OSC 52",
   copy = {
-    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
-    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+    ["+"] = osc52.copy("+"),
+    ["*"] = osc52.copy("*"),
   },
   paste = {
-    ["+"] = function() return {} end,
-    ["*"] = function() return {} end,
+    ["+"] = function()
+      return {}
+    end,
+    ["*"] = function()
+      return {}
+    end,
   },
 }
 
@@ -32,3 +38,5 @@ for _, dir in pairs(lang_dirs) do
     vim.env.PATH = bin_path .. ":" .. vim.env.PATH
   end
 end
+
+vim.env.DOTNET_SYSTEM_GLOBALIZATION_INVARIANT = 1

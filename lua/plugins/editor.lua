@@ -26,6 +26,17 @@ return {
         },
       },
     },
+    config = function(_, opts)
+      require("snacks").setup(opts)
+
+      vim.api.nvim_set_hl(0, "NormalFloat", {
+        bg = "#080808",
+      })
+
+      vim.api.nvim_set_hl(0, "FloatBorder", {
+        bg = "#080808",
+      })
+    end,
   },
   {
     "akinsho/bufferline.nvim",
