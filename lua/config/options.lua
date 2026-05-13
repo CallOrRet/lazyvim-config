@@ -29,6 +29,8 @@ vim.g.clipboard = {
 vim.g.snacks_animate = false
 vim.g.moonflyWinSeparator = 2
 
+vim.lsp.inlay_hint.enable(false)
+
 local lang_dir = "/root/lang"
 local lang_dirs = vim.split(vim.fn.glob(lang_dir .. "/*"), "\n", { trimempty = true })
 for _, dir in pairs(lang_dirs) do
